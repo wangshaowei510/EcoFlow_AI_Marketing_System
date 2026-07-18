@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # =========================
 # 中文字体支持
 # =========================
-plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei"]
+plt.rcParams["font.sans-serif"] = ["Noto Sans CJK SC"]
 plt.rcParams["axes.unicode_minus"] = False
 from wordcloud import WordCloud
 from datetime import datetime
@@ -1044,6 +1044,135 @@ AI系统实现：
     )
 
 
+# ==============================
+# AI跨文化用户洞察
+# ==============================
+
+st.header("🌍 AI跨文化用户洞察")
+
+st.info(
+"""
+AI通过Amazon评论、社交媒体反馈以及用户行为数据，
+识别不同市场消费者购买动机。
+
+🇺🇸 美国市场用户画像
+
+核心需求：
+家庭备用电源 + 户外生活
+
+购买原因：
+- 停电情况下保持家庭设备运行
+- 支持露营、房车旅行
+- 追求能源独立
+
+用户痛点：
+- 担心停电影响生活
+- 传统发电设备噪音大
+- 希望简单快速使用
+
+
+🇩🇪 德国市场用户画像
+
+核心需求：
+能源管理 + 太阳能利用
+
+购买原因：
+- 提高家庭能源利用效率
+- 配合太阳能系统
+- 降低长期能源成本
+
+用户痛点：
+- 电价上涨压力
+- 希望提高能源自主性
+
+
+🇯🇵 日本市场用户画像
+
+核心需求：
+灾害防护 + 家庭安全
+
+购买原因：
+- 地震、台风备用电源
+- 保障家庭关键设备运行
+
+用户痛点：
+- 灾害情况下供电不足
+- 希望产品稳定可靠
+"""
+)
+
+
+# ==============================
+# AI多语言营销内容生成
+# ==============================
+
+st.header("🌐 AI多语言营销内容生成")
+
+
+marketing_ai = {
+"美国市场":
+"""
+核心传播：
+家庭能源安全 + 户外自由
+
+广告文案：
+
+"Never worry about power outages again."
+
+DELTA 2 Max 为家庭提供可靠备用能源，
+无论停电、露营还是户外旅行，
+都能保持生活持续运行。
+
+推荐渠道：
+Amazon Ads
+Facebook
+YouTube
+Outdoor Community
+""",
+
+"德国市场":
+"""
+核心传播：
+绿色能源管理 + 太阳能效率
+
+广告文案：
+
+"Mehr Energie. Mehr Unabhängigkeit."
+
+DELTA 2 Max帮助家庭优化太阳能利用，
+减少能源浪费，提高能源自主能力。
+
+推荐渠道：
+Google Ads
+能源论坛
+环保社区
+""",
+
+"日本市场":
+"""
+核心传播：
+灾害准备 + 家庭安全
+
+广告文案：
+
+"もしもの時にも、安心できる電源を。"
+
+DELTA 2 Max帮助家庭面对自然灾害，
+提供稳定可靠的备用能源。
+
+推荐渠道：
+LINE
+YouTube Japan
+防灾社区
+"""
+}
+
+
+for country, text in marketing_ai.items():
+
+    st.subheader(country)
+
+    st.success(text)
 if False:
 
     st.warning(
