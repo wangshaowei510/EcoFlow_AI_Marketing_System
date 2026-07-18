@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 # =========================
 # 中文字体支持
 # =========================
+plt.rcParams['font.family'] = 'Noto Sans CJK SC'
 plt.rcParams["font.sans-serif"] = ["Noto Sans CJK SC"]
 plt.rcParams["axes.unicode_minus"] = False
 from wordcloud import WordCloud

@@ -1,5 +1,10 @@
+import matplotlib.pyplot as plt
+
+plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC']
+plt.rcParams['axes.unicode_minus'] = False
 import pandas as pd
 from collections import Counter
+
 
 
 def analyze_reviews(file):
