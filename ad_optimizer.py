@@ -19,8 +19,6 @@ def ad_optimizer(review_file):
     print(len(data))
 
 
-    # 关键词分析
-
     keywords = {
         "battery":0,
         "power":0,
